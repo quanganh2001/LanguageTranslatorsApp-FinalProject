@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Language Translators</string>
+
+    <string name="enAntonym">Antonym :</string>
+    <string name="enGrammer">Grammar :</string>
+    <string name="enMeaning">Meaning :</string>
+    <string name="enSynonym">Synonym :</string>
+    <string name="hAntonym">विलोम :</string>
+    <string name="hGrammer">व्याकरण :</string>
+    <string name="hMeaning">अर्थ :</string>
+    <string name="hSynonym">पर्याय :</string>
+
+
+    <string name="touchtoinsert">Touch to insert text</string>
+    <string name="transtext">Translated text here</string>
+    <string name="admob_appid">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner">ca-app-pub-1197965008315006/5272083411</string>
+    <string name="admobInit">ca-app-pub-3940256099942544/1033173712</string>
+
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/tools"
+    android:background="@drawable/dicit_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/engtohinSearchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grident_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_searchview">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/_5sdp"
+                android:tint="@color/darkGrey"
+                android:src="@drawable/btn_search" />
+
+            <EditText
+                android:id="@+id/enToHinSearchView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Enter English Word To Search"
+                android:padding="10dp"
+                android:textCursorDrawable="@color/colorPrimary" />
+
+            <ImageView
+                android:id="@+id/engCross"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/cross_selector" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/enToHinSpeakBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/mic"
+            android:padding="@dimen/_5sdp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/enToHinListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/engtohinSearchLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:layout_weight="1" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>

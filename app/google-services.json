@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "439423989196",
+    "project_id": "language-translators-d7c77",
+    "storage_bucket": "language-translators-d7c77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439423989196:android:5ca8d98543019ba9fc5969",
+        "android_client_info": {
+          "package_name": "com.example.englishhindidictionary"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvSLYTelXLyTxQUTiP5bNI6ceXM4mfC50"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

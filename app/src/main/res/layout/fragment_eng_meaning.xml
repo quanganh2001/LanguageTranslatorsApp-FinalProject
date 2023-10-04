@@ -1,0 +1,1322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingRight="10dp">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80FFFFFF"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/engGroup0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/word"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:gravity="left|center_vertical|center_horizontal|center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Word"
+                        android:textColor="@color/orangeText"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/grammerLayout0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/enGrammerlabel0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/enGrammer"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/enGrammer0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="grammer of the Word"
+                        android:textColor="@color/orangeText"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enMeanLabel0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical|center_horizontal|center"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center_vertical|center_horizontal|center"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enMeaning"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/meaningLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/enMeaning0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="meanings of the words"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enSynonymLabel0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enSynonym"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/synonymLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/enSynonym0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="synonym of the word"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enAntonymLabel0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enAntonym"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/antonymLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/enAntonym0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="antonym"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@color/black" />
+            </LinearLayout>
+
+            
+            
+            <!--gone-->
+            <LinearLayout
+                android:id="@+id/engGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/grammerLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/enGrammerlabel1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/enGrammer"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/enGrammer1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="grammer of the Word"
+                        android:textColor="@color/orangeText"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enMeanLabel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enMeaning"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/meaningLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/enMeaning1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="meanings of the words"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enSynonymLabel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enSynonym"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/synonymLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/enSynonym1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="synonym of the word"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enAntonymLabel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enAntonym"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/antonymLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/enAntonym1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="antonym"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/engGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/grammerLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/enGrammerlabel2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/enGrammer"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/enGrammer2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="grammer of the Word"
+                        android:textColor="@color/orangeText"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enMeanLabel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enMeaning"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/meaningLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/enMeaning2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="meanings of the words"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enSynonymLabel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enSynonym"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/synonymLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/enSynonym2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="synonym of the word"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enAntonymLabel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enAntonym"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/antonymLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/enAntonym2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="antonym"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/engGroup3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/grammerLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/enGrammerlabel3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/enGrammer"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/enGrammer3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="grammer of the Word"
+                        android:textColor="@color/orangeText"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enMeanLabel3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enMeaning"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/meaningLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/enMeaning3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="meanings of the words"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enSynonymLabel3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enSynonym"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/synonymLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/enSynonym3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="synonym of the word"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enAntonymLabel3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enAntonym"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/antonymLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/enAntonym3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="antonym"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/engGroup4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/grammerLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/enGrammerlabel4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/enGrammer"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/enGrammer4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="grammer of the Word"
+                        android:textColor="@color/orangeText"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enMeanLabel4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enMeaning"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/meaningLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/enMeaning4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="meanings of the words"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enSynonymLabel4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enSynonym"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/synonymLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/enSynonym4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="synonym of the word"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enAntonymLabel4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enAntonym"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/antonymLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/enAntonym4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="antonym"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/engGroup5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/grammerLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/enGrammerlabel5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/enGrammer"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/enGrammer5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="grammer of the Word"
+                        android:textColor="@color/orangeText"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enMeanLabel5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enMeaning"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/meaningLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/enMeaning5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="meanings of the words"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enSynonymLabel5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enSynonym"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/synonymLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/enSynonym5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="synonym of the word"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enAntonymLabel5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enAntonym"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/antonymLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/enAntonym5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="antonym"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/engGroup6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/grammerLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/enGrammerlabel6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/enGrammer"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/enGrammer6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="grammer of the Word"
+                        android:textColor="@color/orangeText"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enMeanLabel6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enMeaning"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/meaningLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/enMeaning6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="meanings of the words"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enSynonymLabel6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enSynonym"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/synonymLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/enSynonym6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="synonym of the word"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enAntonymLabel6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enAntonym"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/antonymLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/enAntonym6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="antonym"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/engGroup7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/grammerLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/enGrammerlabel7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/enGrammer"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/enGrammer7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="grammer of the Word"
+                        android:textColor="@color/orangeText"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enMeanLabel7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enMeaning"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/meaningLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/enMeaning7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="meanings of the words"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enSynonymLabel7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enSynonym"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/synonymLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/enSynonym7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="synonym of the word"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enAntonymLabel7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enAntonym"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/antonymLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/enAntonym7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="antonym"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/engGroup8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/grammerLayout8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/enGrammerlabel8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/enGrammer"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/enGrammer8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="grammer of the Word"
+                        android:textColor="@color/orangeText"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enMeanLabel8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enMeaning"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/meaningLayout8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/enMeaning8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="meanings of the words"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enSynonymLabel8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enSynonym"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/synonymLayout8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/enSynonym8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="synonym of the word"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enAntonymLabel8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enAntonym"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/antonymLayout8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/enAntonym8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="antonym"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/engGroup9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/grammerLayout9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/enGrammerlabel9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/enGrammer"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/enGrammer9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="grammer of the Word"
+                        android:textColor="@color/orangeText"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enMeanLabel9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enMeaning"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/meaningLayout9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/enMeaning9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="meanings of the words"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enSynonymLabel9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enSynonym"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/synonymLayout9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/enSynonym9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="synonym of the word"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/enAntonymLabel9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/enAntonym"
+                    android:textColor="@color/orangeText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/antonymLayout9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/enAntonym9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="antonym"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
